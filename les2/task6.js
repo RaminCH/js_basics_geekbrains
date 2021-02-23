@@ -7,22 +7,21 @@ import { div } from './task5.js';
 
 function mathOperation(arg1, arg2, operation) {
     switch (operation) {
-        case operation == add:
-            add(arg1, arg2);
+        case 'add':
+            return add(arg1, arg2);
             break;
-        case operation == subtr:
-            subtr(arg1, arg2);
+        case 'subtr':
+            return subtr(arg1, arg2);
             break;
-        case operation == mult:
-            mult(arg1, arg2);
+        case 'mult':
+            return mult(arg1, arg2);
             break;
-        case operation == div:
-            div(arg1, arg2);
+        case 'div':
+            return div(arg1, arg2);
             break;
     }
-    return operation;
 }
 
 
-var x = new mathOperation(1, 2, add);
+var x = new mathOperation(1, 2, 'add');
 alert(x);
