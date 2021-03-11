@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div  id="select-items">
+            <form id="myForm">
+        
+                    <p>Items</p>
+                    <p><select id="select">
+        
+                        <option value="200" id="a">Clothes</option>
+                        <option value="125" id="b">Parfumery</option>
+                        <option value="33" id="c">Cosmetics</option>
+                        <option value="3" id="d">Food</option>
+        
+                    </select>
+        
+                <button id="button" type="button">Add</button></p>
+                <button id="remove-button" type="button">Remove</button>
+        
+            </form>
+        </div>
+        
+        <div id="basket-total">    
+            <p>Basket:</p>
+            <div id="basket"></div>
+        </div>
+        
+        <div id="total-of-basket">
+            <p>Total Cost:</p>
+            <p id="total-cost"></p>
+        </div>
+    </div>
+</body>
+    <script src="basket.js"></script>
+</html>
